@@ -1,0 +1,7 @@
+[2020-3-16 17:00:27] layer "+7 (9__) ___-__-__": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-3-16 17:00:27] layer "Volvo_Logo.svg": Duplicate path: Volvo_Logo.svg
+[2020-3-16 17:00:27] layer "info@sitename.ru": Unsupported extension: ru
+[2020-3-16 17:00:27] layer "info@sitename.ru": Unsupported extension: ru
+[2020-3-16 17:00:27] layer "Volvo_Logo.svg": Duplicate path: Volvo_Logo.svg
+[2020-3-16 17:00:27] layer "Volvo_Logo.svg": Duplicate path: Volvo_Logo.svg
+[2020-3-16 17:00:27] layer "+7 (9__) ___-__-__": Expected Either a default asset specification or a layer asset specification but "+" found.
