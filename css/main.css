@@ -106,8 +106,7 @@ body, html {
     align-items: center;
 }
 
-.header__btn {
-    background-color: transparent;
+.header__redBtn {
     border: 2px solid #d91233;
     font-weight: 700;
     font-size: 18px;
@@ -118,10 +117,11 @@ body, html {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    background-color: #d91233;
 }
 
-.header__btn:hover {
-    background-color: #d91233;
+.header__redBtn:hover {
+    background-color: transparent;
 }
 
 .header__btnText {
@@ -133,9 +133,9 @@ body, html {
 }
 
 /* Red Icons Section */
-.redIcons__row {
-    /* padding-top: 80px; */
-}
+
+.redIcons__row {}
+
 .redIcon__column {
     display: flex;
     flex-direction: column;
@@ -143,20 +143,87 @@ body, html {
     text-align: center;
     padding-top: 80px;
 }
+
 .redIcons__title {
     padding-top: 30px;
     font-weight: 700;
     font-size: 16px;
 }
+
 .redIcons__subtitle {
     padding-top: 20px;
     font-weight: 400;
     font-size: 14px;
     width: 80%;
 }
-.redIcons__gap {
 
+.redIcons__gap {}
+
+/* Request Section */
+
+#request {
+    background-color: #ebebeb;
 }
+
+.request__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+.request__subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.request__row {
+    margin: 60px 15px 0 15px;
+    border: 5px solid #fff;
+    padding: 55px;
+}
+
+.request__row p {
+    font-weight: 700;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+.request__row input, .request__row select {
+    padding: 14px 17px;
+}
+
+.request__row textarea {
+    height: 134px; /* должно быть 120*/
+    resize: none;
+}
+.request__btn {
+    margin-top: 30px;
+}
+
+.request__form {
+    padding-bottom: 80px;
+}
+
+.request__selectColumn {}
+
+input, textarea, select {
+    border: none;
+    width: 100%;
+}
+
+.request__dataColumn {}
+
+@media screen and (max-width: 990px) {
+    .request__row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header__logo {
         display: flex;

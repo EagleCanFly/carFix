@@ -64,13 +64,13 @@
                 <div class="col-md-1"></div>
                 <div class="col-12 col-md-5">
                     <div class="header__btnColumn">
-                        <button class="header__btn">Быстрая заявка</button>
+                        <button class="header__redBtn">Быстрая заявка</button>
                         <p class="header__btnText">Мы перезвоним Вам для уточнения деталей.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
                     <div class="header__btnColumn">
-                        <button class="header__btn">Подробная заявка</button>
+                        <button class="header__redBtn">Подробная заявка</button>
                         <p class="header__btnText">Заполните подробную заявку онлайн!</p>
                     </div>
                 </div>
@@ -142,7 +142,6 @@
                 </div>
                 <div class="col-0 col-md-2"></div>
             </div>
-            <div class="row redIcons__secondRow"></div>
         </div>
     </section>
     <section id="request">
@@ -153,9 +152,44 @@
             <div class="request__subtitle">
                 <h4>Заполните форму и получите максимально точную цену!</h4>
             </div>
-            <div class="row request__row">
-
-            </div>
+            <form class="request__form" action="#">
+                <div class="row request__row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="request__selectColumn">
+                            <p>Марка:</p>
+                            <select name="label" id="">
+                                <option value="">Жигули</option>
+                                <option value="">Порше</option>
+                            </select>
+                            <p>Модель:</p>
+                            <select name="model" id="">
+                                <option value="">Шестерка</option>
+                                <option value="">Девятка</option>
+                            </select>
+                            <p>Год выпуска:</p>
+                            <select name="year" id="">
+                                <option value="">1984</option>
+                                <option value="">1488</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="request__dataColumn">
+                            <p>Необходимые детали:</p>
+                            <textarea name="" id=""></textarea>
+                            <p>Ваше имя:</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <p>Ваш телефон:</p>
+                        <input type="tel">
+                        <p>Ваш e-mail:</p>
+                        <input type="email">
+                        <button class="header__redBtn request__btn">Узнать цену</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 </body>
