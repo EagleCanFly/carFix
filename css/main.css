@@ -16,7 +16,11 @@ body, html {
     font-family: 'Lato';
     font-weight: 400;
 }
-
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
 /* Header */
 
 #header {
@@ -134,7 +138,9 @@ body, html {
 
 /* Red Icons Section */
 
-.redIcons__row {}
+.redIcons__row {
+    margin-bottom: 15px;
+}
 
 .redIcon__column {
     display: flex;
@@ -166,9 +172,6 @@ body, html {
 }
 
 .request__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
     padding-top: 80px;
 }
 
@@ -197,9 +200,11 @@ body, html {
 }
 
 .request__row textarea {
-    height: 134px; /* должно быть 120*/
+    height: 134px;
+    /* должно быть 120*/
     resize: none;
 }
+
 .request__btn {
     margin-top: 30px;
 }
@@ -217,11 +222,72 @@ input, textarea, select {
 
 .request__dataColumn {}
 
-@media screen and (max-width: 990px) {
+/* brands */
+.brands__row {
+    padding-top: 60px;
+}
+.brands__row > div > img {
+    display: block;
+    margin: 0 auto;
+}
+.brands__title {
+    padding-top: 80px;
+}
+
+/* Modal window */
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal__row {}
+
+.modal__top {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.modal__cross {
+    background-image: url(/img/icons/cross.png);
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 101%;
+    position: absolute;
+}
+
+.modal__top span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.modal__text {
+    margin: 15% 10%;
+}
+
+@media screen and (max-width: 992px) {
     .request__row {
         padding-left: 20px;
         padding-right: 20px;
     }
+    /* .brands__row > div > img {
+        display: none;
+    } */
+    #brands {
+        display: none;
+    } 
 }
 
 @media screen and (max-width: 767px) {
