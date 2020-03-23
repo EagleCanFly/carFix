@@ -16,10 +16,21 @@ body, html {
     font-family: 'Lato';
     font-weight: 400;
 }
+
 .title {
     text-align: center;
     font-weight: 700;
     font-size: 30px;
+    padding-top: 80px;
+}
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #040404;
+}
+select, input {
+    padding: 14px 17px;
 }
 /* Header */
 
@@ -122,6 +133,13 @@ body, html {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     background-color: #d91233;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
+    transition: all 0.3s ease;
 }
 
 .header__redBtn:hover {
@@ -171,9 +189,7 @@ body, html {
     background-color: #ebebeb;
 }
 
-.request__title {
-    padding-top: 80px;
-}
+.request__title {}
 
 .request__subtitle {
     text-align: center;
@@ -209,6 +225,10 @@ body, html {
     margin-top: 30px;
 }
 
+.request__btn:hover {
+    color: #000;
+}
+
 .request__form {
     padding-bottom: 80px;
 }
@@ -223,16 +243,139 @@ input, textarea, select {
 .request__dataColumn {}
 
 /* brands */
+
 .brands__row {
     padding-top: 60px;
 }
-.brands__row > div > img {
+
+.brands__row>div>img {
     display: block;
     margin: 0 auto;
 }
-.brands__title {
-    padding-top: 80px;
+
+.brands__title {}
+
+/* Video Section */
+
+.container-video {
+    border: 5px solid #f2f2f2;
+    padding: 10px;
+    margin-top: 65px;
+    margin-bottom: 80px;
 }
+
+/* Clients Section */
+
+#clients {
+    background-color: #ebebeb;
+}
+
+.clients__row {
+    padding-bottom: 85px;
+}
+
+.clients__item {
+    padding-top: 60px;
+}
+
+.clients__image {}
+
+.clients__content {
+    padding-left: 21px;
+}
+
+.clients__name {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.clients__question {
+    color: #d91233;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 12px;
+}
+
+.clients__text {
+    color: #2b2b2b;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+/* Consult Section */
+
+#consult {
+    background-color:#dbdbdb;
+}
+.consult__row {
+    margin: 40px;
+    border: 5px solid #fff;
+    padding: 55px;
+}
+.consult__row p { /* Продублировал код */
+    font-weight: 700;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+.consult__btn {
+    margin-top: 40px;
+}
+.consult__form {
+   padding-bottom: 77px;
+}
+.consult__subtitle {
+    padding-top: 21px;
+}
+
+/* Map section */
+#map {
+    background-image: url(/img/map_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+.map__content {
+    background-color: #d91233;
+    margin-top: 50px;
+    margin-bottom: 190px;
+}
+.map__title {
+    font-weight: 70;
+    font-size: 24px;
+    padding-top: 60px;
+}
+.map__address {
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 45px;
+}
+.map__phone {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.map__link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/* Footer */
+.footer__row {
+    color: #000;
+    background: #fff;
+    padding-bottom: 30px;
+}
+.footer__phoneNumber {
+    color: #000;
+}
+
 
 /* Modal window */
 
@@ -287,7 +430,7 @@ input, textarea, select {
     } */
     #brands {
         display: none;
-    } 
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -303,5 +446,19 @@ input, textarea, select {
     }
     .redIcons__gap {
         display: none;
+    }
+    .consult__row {
+        margin: 40px;
+        padding: 25px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+
+    /* .consult__btn > .header__redBtn {
+        padding: 10px 15px;
+    } */
+    .consult__row {
+        margin: 20px;
     }
 }
