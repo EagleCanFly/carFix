@@ -13,6 +13,7 @@ const modal = document.querySelector('.modal'),
 const timeout = (delay) => {
     setTimeout(() => {
         modal.style.display = 'none';
+        modalThanks.style.display = "none";
     }, delay);
 };
 
@@ -40,6 +41,7 @@ const hideModal = (modalBox) => {
 ///////////////////////////////////////////////////////////////
 showModal(thanksBtn, modalThanks);
 showModal(callbackBtn, modalCallback);
+hideModal(modalThanks);
 hideModal(modalCallback);
 
 
