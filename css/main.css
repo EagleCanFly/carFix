@@ -17,6 +17,11 @@ body, html {
     font-weight: 400;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 .title {
     text-align: center;
     font-weight: 700;
@@ -38,16 +43,15 @@ select, input {
 /* Header */
 
 #header {
-    background-image: url(/img/bg-header.png);
+    background: linear-gradient(to bottom, #252524 0px, transparent 90px), url(/img/bg-header.png);
+    background-image: ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
 .header__topRow {
-    background: linear-gradient(to bottom, #252524, transparent);
 }
-
 .header__logo {
     padding-top: 34px;
 }
@@ -377,6 +381,7 @@ input, textarea, select {
 }
 
 .map__phone {
+    color: #fff;
     font-weight: 700;
     font-size: 20px;
     padding-top: 30px;
@@ -403,6 +408,9 @@ input, textarea, select {
 }
 
 .footer__phoneNumber {
+    color: #000;
+}
+.footer__phoneNumber:hover {
     color: #000;
 }
 
@@ -514,5 +522,8 @@ input, textarea, select {
     } */
     .consult__row {
         margin: 20px;
+    }
+    .modal__btn {
+        padding: 15px 22px;
     }
 }
