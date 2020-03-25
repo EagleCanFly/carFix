@@ -15,6 +15,8 @@ let inputAll = document.querySelectorAll('input, textarea');
 
 const hideTimer = (delay) => {
     setTimeout(() => {
+        if (modalCallback.style.display === 'block' || modalFastCallback.style.display === 'block') return;
+
         modal.style.display = 'none';
         modalThanks.style.display = "none";
     }, delay);
