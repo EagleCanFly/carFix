@@ -75,6 +75,7 @@ select, input {
 .header__callOrder:hover {
     color: #d91233;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .header__text {
@@ -157,6 +158,13 @@ select, input {
     padding-top: 20px;
     padding-bottom: 90px;
 }
+.link-btn {
+    text-decoration: none;
+}
+.link-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* Red Icons Section */
 
@@ -229,7 +237,7 @@ select, input {
     margin-top: 30px;
 }
 
-.request__btn:hover {
+.black-text-btn:hover {
     color: #000;
 }
 
@@ -379,7 +387,11 @@ input, textarea, select {
     text-decoration: underline;
     font-size: 20px;
     padding-top: 30px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+.map__link:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Footer */
@@ -456,6 +468,10 @@ input, textarea, select {
 }
 
 .modal__callback {
+    display: none;
+}
+
+.modal__fastCallback {
     display: none;
 }
 

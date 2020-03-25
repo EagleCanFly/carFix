@@ -1,47 +1,61 @@
 const modal = document.querySelector('.modal'),
-    modalBtn = document.querySelectorAll('.header__redBtn'),
-    modalText = document.querySelector('.modal__text'),
     redCross = document.querySelectorAll('.modal__cross'),
-    thanksBtn = document.querySelectorAll('.thanks-btn'),
     modalThanks = document.querySelector('.modal__thanks'),
     modalCallback = document.querySelector('.modal__callback'),
+    modalFastCallback = document.querySelector('.modal__fastCallback'),
+
+    modalBtn = document.querySelectorAll('.header__redBtn'),
+    thanksBtn = document.querySelectorAll('.thanks-btn'),
+    fastCallbackBtn = document.querySelectorAll('.fast-callback-btn'),
     callbackBtn = document.querySelectorAll('.callback-btn');
 
+let inputAll = document.querySelectorAll('input, textarea');
 
 // functions //////////////////////////////////////////////////
 
-const timeout = (delay) => {
+const hideTimer = (delay) => {
     setTimeout(() => {
         modal.style.display = 'none';
         modalThanks.style.display = "none";
     }, delay);
 };
 
+
 const showModal = (buttons, modalBox) => {
 
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', () => {
+    buttons.forEach(element => {
+        element.addEventListener('click', () => {
             modal.style.display = 'block';
             modalBox.style.display = 'block';
-            if (modalBox === modalThanks) {timeout(5000);};
-        });
 
-    }
+            inputAll.forEach(elem => {
+                elem.value = '';
+            });
+        });
+    });
+   
+    if (modalBox === modalThanks) { hideTimer(5000); };
+
 };
 
+
 const hideModal = (modalBox) => {
-    for (let i = 0; i < redCross.length; i++) {
-        redCross[i].addEventListener('click', () => {
+
+    redCross.forEach(element => {
+        element.addEventListener('click', () => {
             modal.style.display = 'none';
             modalBox.style.display = "none";
         })
-    }
+    })
 };
+
 
 ///////////////////////////////////////////////////////////////
 showModal(thanksBtn, modalThanks);
 showModal(callbackBtn, modalCallback);
+showModal(fastCallbackBtn, modalFastCallback);
 hideModal(modalThanks);
 hideModal(modalCallback);
+hideModal(modalFastCallback);
 
 
