@@ -43,9 +43,8 @@ select, input {
 /* Header */
 
 #header {
-    background: linear-gradient(to bottom, #252524 0px, transparent 90px), url(img/bg-header.png);
-    background-image: ;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #252524 0px, transparent 90px);
+    background-image:  url(img/headerbg.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -355,7 +354,7 @@ input, textarea, select {
 /* Map section */
 
 #map {
-    background-image: url(img/map_bg.png);
+    background-image: url(img/mapbg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
