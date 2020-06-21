@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Lato';
-    src: url(fonts/Lato-Regular.ttf);
+    src: url(https://eaglecanfly.github.io/carFix/fonts/Lato-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url(fonts/Lato-Bold.ttf);
+    src: url(https://eaglecanfly.github.io/carFix/fonts/Lato-Bold.ttf);
     font-style: normal;
     font-weight: 700;
 }
