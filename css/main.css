@@ -44,7 +44,7 @@ select, input {
 
 #header {
     background: linear-gradient(to bottom, #252524 0px, transparent 90px);
-    background-image:  url(img/headerbg.png) no-repeat;
+    background-image:  url(https://eaglecanfly.github.io/carFix/img/headerbg.png) no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -354,7 +354,7 @@ input, textarea, select {
 /* Map section */
 
 #map {
-    background-image: url(img/mapbg.png);
+    background-image: url(https://eaglecanfly.github.io/carFix/img/mapbg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -452,7 +452,7 @@ input, textarea, select {
 }
 
 .modal__cross {
-    background-image: url(img/icons/cross.png);
+    background-image: url(https://eaglecanfly.github.io/carFix/img/icons/cross.png);
     width: 22px;
     height: 22px;
     top: 0;
