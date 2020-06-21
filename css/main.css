@@ -43,8 +43,7 @@ select, input {
 /* Header */
 
 #header {
-    background: linear-gradient(to bottom, #252524 0px, transparent 90px);
-    background-image:  url(https://eaglecanfly.github.io/carFix/img/headerbg.png) no-repeat;
+    background: linear-gradient(to bottom, #252524 0px, transparent 90px), url(https://eaglecanfly.github.io/carFix/img/headerbg.png), no-repeat;
     background-position: center center;
     background-size: cover;
 }
